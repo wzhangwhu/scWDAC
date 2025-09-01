@@ -1,4 +1,8 @@
 This repository contains the code for the paper "Clustering Single-Cell Multi-Omics Data via Weighted Distance Penalty and Adaptive Consistent Graph Regularization". The paper focuses on integrating paired single-cell multi-omics.
 
 
-Requirements MATLAB software
+Requirements MATLAB2021b software
+
+run the scWDAC_main.m
+
+
