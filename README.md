@@ -10,7 +10,7 @@ Use the native MATLAB implementation for optimal performance.
 
 Option 2: Python Interface with MATLAB Engine
 Use the Python wrapper that calls the MATLAB implementation (requires MATLAB installation).
-##################################################################################################################
+########################################################
 
 Requirements
 For MATLAB Usage:
@@ -38,7 +38,7 @@ matlab
 addpath('/path/to/scWDAC');
 Load your data and run scWDAC:
 
-#########################################################################################################################
+########################################################
 For Python Usage:
 1. Setup MATLAB Engine for Python
 Check your MATLAB's supported Python version in the MATLAB directory under:
@@ -75,11 +75,15 @@ Locate the supported Python version for your MATLAB installation. This can typic
 extern → engines → python
 
 For example, if your MATLAB version supports Python 3.8, 3.9, and 3.10, ensure you use one of these versions.
-<img width="334" height="203" alt="image" src="https://github.com/user-attachments/assets/426f8207-6a62-40f9-b63c-515a5d2123d6" />
+
+<img width="334" height="203" alt="image" src="https://github.com/user-attachments/assets/2dd81be5-2a96-415d-b2f4-d5efb37d0a10" />
+
+
 2. Create Python Virtual Environment
 Create a virtual environment using conda that matches the supported Python version:
-<img width="266" height="177" alt="image" src="https://github.com/user-attachments/assets/ba2317bb-bf74-420b-bc33-fe57f305290c" />
-<img width="416" height="79" alt="image" src="https://github.com/user-attachments/assets/edfb3605-f679-47cc-95a3-b757240b3d69" />
+<img width="266" height="177" alt="image" src="https://github.com/user-attachments/assets/4367b788-a59d-4149-b145-fcf331e0192a" />
+
+<img width="416" height="79" alt="image" src="https://github.com/user-attachments/assets/53a44524-b4c4-4919-a983-1f5e2eedd1ab" />
 
 bash
 conda create -n scwdac_env python=3.8
@@ -94,9 +98,11 @@ bash
 cd "matlabroot/extern/engines/python"
 python setup.py install
 During installation, you will see various messages. If no red error messages appear and matlabengineforpython is displayed, the installation has completed successfully.
-<img width="416" height="24" alt="image" src="https://github.com/user-attachments/assets/1c190ec0-a5fc-41a5-a831-f7fd9574a528" />
-<img width="300" height="120" alt="image" src="https://github.com/user-attachments/assets/14c050d9-5637-4277-a217-741c30bf349c" />
 
+
+<img width="416" height="24" alt="image" src="https://github.com/user-attachments/assets/05b35431-a227-4143-804e-e656bf9bfe20" />
+
+<img width="300" height="120" alt="image" src="https://github.com/user-attachments/assets/53514ae6-e039-4fce-b182-d9e2db939b6e" />
 
 
 4. Configure PyCharm (Optional)
@@ -116,7 +122,8 @@ Run the main Python script:
 bash
 python main.py
 This will execute the scWDAC method using the provided example datasets.
-<img width="318" height="143" alt="image" src="https://github.com/user-attachments/assets/aeaa8596-cb30-49fa-a8d6-df62cc1a3fdb" />
+
+<img width="318" height="143" alt="image" src="https://github.com/user-attachments/assets/69c6b0fd-a2ad-43c9-818b-52b5fc97b51e" />
 
 Datasets
 Example datasets are provided in the datasets folder. Each dataset contains:
@@ -124,12 +131,17 @@ Multi-view data (X): Where each view X{v} has dimensions n × m (samples × feat
 True labels (true_label): Ground truth labels for evaluation
 
 File Structure
+
 text
+
 ├── main.py                 # Python interface for running scWDAC
+
 ├── scWDAC.m               # Main MATLAB implementation
+
 ├── datasets/              # Example datasets
 │   ├── SNARE.mat
 │   └──  data1_sim.mat...
+
 └── README.md             # This file
 
 
