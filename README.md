@@ -5,38 +5,56 @@ Overview
 The scWDAC method is designed for clustering single-cell multi-omics data. It integrates multiple data views by employing a weighted distance penalty and adaptive consistent graph regularization to improve clustering performance.
 
 Implementation Options
+
 Option 1: Direct MATLAB Usage (Recommended for MATLAB Users)
+
 Use the native MATLAB implementation for optimal performance.
 
 Option 2: Python Interface with MATLAB Engine
+
 Use the Python wrapper that calls the MATLAB implementation (requires MATLAB installation).
 ########################################################
 
 Requirements
 For MATLAB Usage:
+
 MATLAB (R2020a or later recommended)
+
 Required MATLAB toolboxes: Statistics and Machine Learning Toolbox
+
 Quick Start:  MATLAB Example
+
 Add the project directory to your MATLAB path:
 
 % Open MATLAB and run the main script
+
 scWDAC_main
+
 This will run the scWDAC method on the example dataset (SNARE) and display the results.
 
 Example 2: Using the function with your own data
 Place your data file in the datasets folder:
 Your data file should contain:
+
 X: multi-view data (cell array)
+
 true_label: ground truth labels (vector)
+
 Modify the dataset name in scWDAC_main.m:
 
-matlab
-% Replace 'SNARE' with your dataset name
+% Replace 'SNARE' with your dataset name 
 dataset = {'your_dataset_name'};
 
-matlab
-addpath('/path/to/scWDAC');
-Load your data and run scWDAC:
+Example Data Format
+Your data file (e.g., your_data.mat) should contain:
+
+% X: multi-view data (cell array)
+
+X{1} = view1_data;  % n × m1 matrix
+
+X{2} = view2_data;  % n × m2 matrix
+
+true_label = [1,1,2,2,3,3,...];  % n × 1 vector
 
 ########################################################
 For Python Usage:
