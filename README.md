@@ -1,5 +1,5 @@
 # scWDAC
-# scWDAC
+
 This repository contains the implementation of the scWDAC method for clustering single-cell multi-omics data, featuring both MATLAB and Python interfaces.
 
 Overview
@@ -76,8 +76,10 @@ Before running the program, please ensure your environment meets the following r
 
 * 
 <p align="left">
-  <img src="figure/simu1_result.png" width="600px" alt="Simulation Result">
+  <img src="scWDAC_Python/figure/simu1_result.png" width="600px" alt="Simulation Result">
 </p>
+
+
 
 ## 4. Output and Evaluations
 Once the execution is complete, the program will output a result vector. This vector contains the following performance metrics in order:
