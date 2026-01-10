@@ -1,7 +1,6 @@
 # scWDAC
 
 This repository provides the scWDAC method for clustering single-cell multi-omics data. You can use this tool in both **MATLAB** and **Python**.
-For any questions, please do not hesitate to contact me at wzhang_math@whu.edu.cn.
 
 ## Overview
 The scWDAC method is designed for clustering single-cell multi-omics data. It integrates multiple data views by employing a weighted distance penalty and adaptive consistent graph regularization to improve clustering performance.
@@ -60,3 +59,7 @@ Use the native MATLAB implementation for optimal performance.
 <p align="left">
   <img src="scWDAC_Python/figure/simu1_result.png" width="600px" alt="Simulation Result">
 </p>
+
+#### Contact details
+For any questions, please do not hesitate to contact me at wzhang_math@whu.edu.cn.
+
