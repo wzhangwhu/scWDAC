@@ -5,6 +5,9 @@ This repository provides the scWDAC method for clustering single-cell multi-omic
 ## Overview
 The scWDAC method is designed for clustering single-cell multi-omics data. It integrates multiple data views by employing a weighted distance penalty and adaptive consistent graph regularization to improve clustering performance.
 
+## Citation
+If you use this tool in your research, please cite the following paper:
+Wei Zhang, Yue Yu, Xiaoying Zheng, Juan Shen, Yuanyuan Li. Clustering Single-Cell Multi-Omics Data via Weighted Distance Penalty and Adaptive Consistent Graph Regularization. PLOS Computational Biology, 2026, 22(3): e1014110.  DOI: 10.1371/journal.pcbi.1014110 
 ---
 
 ## Implementation Options
@@ -59,6 +62,9 @@ Use the native MATLAB implementation for optimal performance.
 <p align="left">
   <img src="scWDAC_Python/figure/simu1_result.png" width="600px" alt="Simulation Result">
 </p>
+
+####
+The datasets used in this paper can be found: https://zenodo.org/records/19216385
 
 #### Contact details
 For any questions, please do not hesitate to contact me at wzhang_math@whu.edu.cn.
